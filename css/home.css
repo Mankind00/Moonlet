@@ -1,0 +1,724 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: "karla", sans-serif;
+    color: black;
+    margin: 0;
+}
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+/* Brand header  */
+.topbar > h1 {
+    border-left: 5px solid #fdd38c;
+    border-radius: 20px;
+    border-width: 5px;
+    padding: 10px 12px 8px;
+    margin: 5px 0 5px 30px ;
+    color: #F7A815;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+/* variant color on header  */
+h1 > span {
+    color: #6b93d6;
+}
+/* topbar navigatioin  */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    
+}
+/* topbar unordered list  */
+.topbar ul {
+    height: 25px;
+    min-height: 25px;
+    display: flex;
+    margin-bottom: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+/* navigation links topbar left and right */
+.nav-links {
+    color: #6b93d6;
+    padding: 18px 18px;
+    text-decoration: none;
+}
+/* hot deals style  */
+a.nav-links.nav-hot-deals {
+    padding: 0 3px;
+    color: #FF560B;
+}
+.nav-active {
+    color: #F7A815;
+}
+/* navigation on hover  */
+.nav-links:hover {
+    text-decoration: none;
+    color: #F7A815;
+}
+.topbar-right {
+    margin: 5px 30px 30px 0;
+}
+.topbar-right a.nav-links {
+    padding: 5px 5px;
+}
+.topbar-left {
+    margin: 35px 0 30px 40px;
+}
+.topbar-left .nav-links {
+    padding: 0 25px;
+}
+/* arrow for navigation dropdown  */
+.arrow {
+    padding:0 10px 0 10px;
+}
+
+.dropdown-menu {
+    margin-top: 37px;
+}
+.drop-flex {
+    display: flex;
+}
+a.dropdown-item:hover {
+    color:#F7A815
+}
+/* carousel images  */
+.first-slider-img {
+    background-image: url(/images/earth-moon.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    
+}
+.second-slider-img {
+    background-image: url(/images/earth-moon2.0.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* carousel images  */
+/* fore-ground text on carousel  */
+.fg-text > h2 {
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+.fg-text > h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+    margin-top: 0;
+}
+.fg-text > p {
+    font-family: Helvetica, sans-serif;
+    top: 18px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.fg-text {
+    padding-left: 150px;
+    padding-top: 60px;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    top: 50px;
+}
+input[type=button] {
+    padding: 8px;
+    border: none;
+    box-shadow: 0;
+    color: #fff;
+    background-color: rgb(247,168,21);
+}
+/* font awesome property for input icons */
+.fontAwesome {
+    font-family: "karla", 'FontAwesome', sans-serif;
+  }
+
+#background-carousel {1
+    position: relative;
+}
+/* call to action area on carousel */
+.cta {
+    width: 100%;
+    position: absolute;
+    top: 260px;
+}
+/* navigation tabs on booking area (call to action) */
+ul.nav-tabs {
+    border-bottom: none;
+    font-size: 14px;
+    font-family: 'Righteous', sans-serif;
+    padding-left: 150px;
+}
+/* navigation tabs link for flights, hotels and tours */
+.nav-tabs a.nav-link {
+    border: none;
+    color: #000;
+    padding: 4px 20px;
+    background-color: white;
+    margin-right: 3px;
+}
+/* active navigation tab link for flights, hotels and tours */
+.nav-tabs a.nav-link.active {
+    background-color: rgb(107,147,214, 0.5);
+    color: white;
+}
+/* tab content area for navigation tabs for flights, hotels, tours */
+.tab-content {
+    height: 250px;
+    color: #fff;
+    background-color: rgb(107,147,214, 0.5);
+    padding: 10px 20px 10px 150px;
+}
+icons for navigations tab
+.tab-icon {
+    padding-right: 8px;
+}
+input {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px;
+}
+input[type=text]:focus {
+    border: none;
+}
+/* datalist dropdown arrow down removal */
+[list]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+/* travel date input styles */
+#travel-date {
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    width: 15%;
+    height: 50px;
+}
+/* origin and destinations input styles */
+.location-input {
+    width: 30%;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+}
+.transfer-icon {
+    width: 30px;
+    position: relative;
+}
+.layover1 {
+    margin-right: -12px;
+}
+.layover2 {
+    margin-left: -12px;
+}
+/* styles for advance options  */
+.advance-opt {
+    text-decoration: none;
+    color: #fff;
+    background-color: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.advance.show {
+    background-color: rgb(107,147,214, 0.5);
+}
+/* search for booking (call to action area) */
+input[type=submit].search {
+    margin-bottom: 5%;
+    margin-left: 78%;
+    padding: 15px 30px;
+    border: none;
+    box-shadow: 0;
+    color: #fff;
+    background-color: rgb(247,168,21);
+}
+.sub-content {
+    width: 90%;
+    margin-top: 20px;
+    padding-left: 150px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-item {
+    width: 30%;
+}
+.sub-item h5 {
+    font-size: 16px;
+}
+.sub-image {
+    width: 100px;
+    float: left;
+    clear: both;
+}
+h5 {
+    margin-top: 10px;
+    color: #F7A815;
+}
+h5 ~ p {
+    font-size: 12px;
+}
+.sub-content > p {
+    float: right;
+}
+
+
+.products-header {
+    text-transform: uppercase;
+    
+    padding: 90px 80px 30px;
+    text-align: center;
+}
+h2 > .left-head-color {
+    color: #F7A815;
+}
+h2 > .right-head-color {
+    color: #6b93d6;
+}
+h2 { 
+    color:black;
+}
+
+/* ***** OUR TOP PRODUCTS SECTION***** */
+
+
+.container {
+    font-size: 14px;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+.product-body {
+    font-family: "karla", sans-serif;
+}
+.travel-products {
+    padding: 15px;
+    margin: 6px 0;
+    width: 350px;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.travel-products:hover {
+    cursor: pointer;
+    box-shadow: -1px 2px 9px -1px rgba(3,3,3,0.66);
+-webkit-box-shadow: -1px 2px 9px -1px rgba(3,3,3,0.66);
+-moz-box-shadow: -1px 2px 9px -1px rgba(3,3,3,0.66);
+}
+.travel-products a, .travel-products a:hover {
+    color: #6b93d6;
+    text-decoration: none;
+}
+.head-width {
+    width: 400px;
+
+}
+.travel-products > h4 {
+    font-family: "karla", sans-serif;
+    color: #1A2B48;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.product-image {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 140px;
+}
+]
+.inline-header {
+    display: flex;
+}
+.inline-product-header {
+    display: inline;
+}
+hr {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #F7A815;
+    width: 80%;
+}
+
+/* ****** MARSLET ADVERTISEMENT ****** */
+
+
+#adscarousel {
+    width: 80%;
+    margin: 1% auto 3%;
+}
+.adscarousel {
+    color: #6b93d6;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 1% auto 2%;
+}
+.first-ad-image {
+    width: 100%;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.second-ad-image {
+    width: 100%;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.third-ad-image {
+    width: 100%;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* ***** DECISIONS SECTIONS ***** */
+
+
+.decisions {
+    margin: auto;
+    margin-top: 3%;
+    
+}
+.decisions h4 {
+    text-align: center;
+    font-weight: 400;
+}
+.decision-tab {
+    display: flex;
+    justify-content: center;
+    margin: 2% auto 0;
+}
+.see-flights, .see-destinations {
+    border-radius: 5px;
+    width: 40%;
+    margin-right: 20px;
+    box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+-webkit-box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+-moz-box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+}
+.decision-img {
+    width: 30%;
+    float: left;
+    margin-right: 4%;
+}
+.see-flights p, .see-destinations p {
+    font-weight: 100;
+    font-size: 18px;
+    padding: 3% 0 8%;
+    margin-bottom: 0;
+}
+
+input.decision-btn {
+    margin-bottom: 2%;
+    padding: 2% 6%;
+    cursor: pointer;
+}
+
+/* ABOUT AGENCY SECTION  */
+
+section.about-agency {
+    text-align: center;
+    
+    width: 80%;
+    margin: 100px auto 50px;
+}
+article p, .newsletter p {
+    font-size: 18px;
+    color: gray;
+}
+article h5 {
+    color:#000;
+    font-weight:600
+}
+
+
+/* NEWSLETTER AREA  */
+.newsletter {
+    
+    padding-bottom: 50px;
+    text-align: center;
+    box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+-webkit-box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+-moz-box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+    width: 80%;
+    margin: 20px auto 40px;
+}
+.newsletter-header {
+    font-weight: 600;
+    margin: 0;
+    padding: 75px 0 0;
+}
+.newsletter-input {
+    font-size: 14px;
+    border: none;
+    padding: 15px 15px;
+    width: 45%;
+    box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+-webkit-box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+-moz-box-shadow: -1px 2px 4px -1px rgba(3,3,3,0.66);
+}
+input[type="submit"] {
+    color: white;
+    font-size: 14px;
+    background-color: rgb(247,168,21);
+    padding: 15px 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* FOOTER  */
+
+footer {
+    
+    color: white;
+    background-color: #6b93d6;
+    padding: 20px 0 1px;
+    text-align: center;
+}
+footer h5 {
+    color: white;
+}
+.footer-link {
+    color: white ;
+    text-decoration: none;
+}
+footer a {
+    color: white;
+}
+.footer-nav {
+    margin: 0 auto;
+    width: 50%;
+    padding: 0 0 15px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.topbar-me {
+    display: none;
+}
+p.copyright {
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 1037px) {
+    .arrow {
+        position: relative;
+        bottom: 22px;
+        left: 95px;
+        padding: 0;
+        margin: 0 10px;
+    }
+    .decision-img {
+        width: 38%;
+    }
+    
+}
+@media screen and (max-width: 991px) {
+    a.nav-links.nav-hot-deals {
+        padding: 0;
+    }
+    .topbar-left .nav-links {
+        padding: 0;
+    }
+    .dropdown-menu {
+        position: absolute;
+        z-index: 30;
+    }
+    ul.topbar-left{
+        position: absolute;
+        z-index: 10;
+    }
+    ul.topbar-right {
+        position: absolute;
+        z-index: 1;
+        margin-left: 65%;
+        top: 300px;
+    }
+    .nav-height {
+        height: 250px;
+    }
+    .dropdown-menu {
+        margin-top: 5px;
+    }
+    .topbar-left {
+        margin: 15px 0 10px 15px;
+    }
+    .topbar-left li {
+        padding: 4px 0;
+    }
+    .arrow {
+        position: absolute;
+        top: 13px;
+        left: 90px;
+    }
+    .location-input {
+        width: 45%;
+        
+    }
+    #travel-date {
+        width: 35%;
+    }
+    ul.nav-tabs, .fg-text, .tab-content, .sub-content {
+        padding-left: 100px;
+    }
+    .sub-content {
+        width: 95%;
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+    .sub-item {
+        width: 40%;
+    }
+    .decision-img {
+        width: 41%;
+    }
+
+    @media screen and (max-width: 768px) {
+        ul.topbar-right {
+            position: absolute;
+            z-index: 1;
+            margin-left: 60%;
+            top: 300px;
+        }
+        #travel-date {
+            width: 45%;
+        }
+        .sub-content{
+            display: block;
+        }
+        ul.nav-tabs, .fg-text, .tab-content, .sub-content {
+            padding-left: 80px;
+        }
+        .sub-content {
+            width: 95%;
+            padding-right: 50px;
+            margin-right: 10px;
+        }
+        .sub-item {
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .sub-item h5 {
+            padding-top: 20px;
+        }
+        .decision-tab {
+            display: block;
+        }
+        
+        .see-destinations, .see-flights {
+            width: 100%;
+            height: 23%;
+            margin-bottom: 5%;
+        }
+        .see-destinations p, .see-flights p {
+            padding: 1% 0 3%;
+        }
+        .decision-img {
+            width: 17%;
+        }
+        input.decision-btn {
+            margin-bottom: 1%;
+        }
+    }
+}   
+@media screen and (max-width: 576px) {
+    ul.topbar-right {
+        position: absolute;
+        z-index: 1;
+        margin-left: 55%;
+        top: 300px;
+    }
+    .location-input {
+        margin-top: -10px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    #travel-date {
+        margin-top: 10px;
+        width: 49%;
+    }
+    #travel-date.layover1 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 1px solid black;
+        margin-right: -5px;
+    }
+    #travel-date.layover2 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 1px solid black;
+        margin-left: -5px;
+    }
+    .layover1, .layover2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .transfer-icon {
+        display: none;
+    }
+    ul.nav-tabs, .fg-text, .tab-content, .sub-content {
+        padding-left: 40px;
+    }
+    ul.nav-tabs {
+        margin-top: -40px;
+        padding-top: 0;
+    }
+    .tab-content {
+        height: 320px;
+    }
+    .decision-img {
+        width: 17%;
+    }
+    .see-destinations p, .see-flights p {
+        padding: 1% 0 1%;
+    }
+    input.decision-btn {
+        margin-bottom: 1%;
+    }
+    .advance.collapse.show {
+        width: 100%;
+        margin-top: -2px;
+        padding: 5px 10px 10px;
+        background-color: rgb(107,147,214, 0.5);
+    }
+    .first-slider-img {
+        background-image: url(/images/earth-moon.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+        
+    }
+    .second-slider-img {
+        background-image: url(/images/earth-moon2.0.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    input[type=button] {
+        display: none;
+        
+    }
+}

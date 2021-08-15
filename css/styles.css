@@ -703,16 +703,16 @@ p.copyright {
         background-color: rgb(107,147,214, 0.5);
     }
     .first-slider-img {
-        background-image: url(/images/earth-moon.jpg);
-        height: 100vh;
+        background-image: url(images/earth-moon.jpg);
+        height: 60vh;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top right;
         
     }
     .second-slider-img {
-        background-image: url(/images/earth-moon2.0.jpg);
-        height: 100vh;
+        background-image: url(images/earth-moon2.0.jpg);
+        height: 60vh;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
